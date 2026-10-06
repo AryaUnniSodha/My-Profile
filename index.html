@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arya U | Web Development | Software & AI</title>
+<meta name="description" content="Arya U — Computer Science postgraduate interested in web development, software engineering, data analytics and AI-driven applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07090d;--bg2:#0d1117;--card:#10151c;--bd:#1e2630;--tx:#e8ecf2;--mu:#8b96a5;--ac:#6c8cff;--ac2:rgba(108,140,255,.12);--sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#fafbfc;--bg2:#f1f3f6;--card:#fff;--bd:#dfe3ea;--tx:#10151c;--mu:#576170;--ac:#3c5be0;--ac2:rgba(60,91,224,.08)}}
+:root[data-theme="dark"]{--bg:#07090d}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:6px}
+.w{max-width:1100px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.eye{font:500 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin:0 0 12px}
+h2{font-size:clamp(28px,4vw,40px);line-height:1.15;letter-spacing:-.025em;margin:0 0 20px}
+h3{margin:0 0 8px;letter-spacing:-.01em}
+p{margin:0 0 14px;color:var(--mu)}
+header{position:sticky;top:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-weight:700;text-decoration:none;letter-spacing:-.02em}.logo i{color:var(--ac);font-style:normal}
+.links{display:flex;align-items:center;gap:26px}
+.links a{font-size:14px;color:var(--mu);text-decoration:none;transition:color .2s}.links a:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:10px;font:600 14px var(--sans);text-decoration:none;border:1px solid var(--bd);background:transparent;color:var(--tx);cursor:pointer;transition:transform .2s,border-color .2s,background .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--ac)}
+.btn.p{background:var(--ac);border-color:var(--ac);color:#fff}.btn.p:hover{filter:brightness(1.1)}
+.links .btn{min-height:36px;padding:0 14px}
+#mb{display:none;background:none;border:1px solid var(--bd);color:var(--tx);width:44px;height:44px;border-radius:10px;cursor:pointer;font-size:18px}
+.hero{padding:112px 0 80px;background:radial-gradient(700px 360px at 80% -10%,var(--ac2),transparent),linear-gradient(var(--bd) 1px,transparent 1px) 0 0/100% 64px;background-blend-mode:normal}
+.tags{font:500 12px var(--mono);letter-spacing:.12em;color:var(--mu);display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:28px}.tags span:before{content:"/ ";color:var(--ac)}
+h1{font-size:clamp(38px,7vw,76px);line-height:1.04;letter-spacing:-.04em;margin:0 0 24px;max-width:13ch}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--ac),#9fb3ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:60ch;font-size:18px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.g{display:grid;gap:16px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:24px;transition:transform .25s,border-color .25s}
+.c:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--ac) 55%,var(--bd))}
+.stat b{display:block;font-size:30px;letter-spacing:-.03em}.stat span{font-size:13px;color:var(--mu)}
+.sk h3{font:500 12px var(--mono);letter-spacing:.1em;color:var(--ac);text-transform:uppercase}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{font:400 12.5px var(--mono);padding:4px 10px;border:1px solid var(--bd);border-radius:999px;color:var(--mu);background:var(--bg2)}
+.pj{display:flex;flex-direction:column;gap:12px}
+.pj .top{display:flex;justify-content:space-between;align-items:center;font:500 12px var(--mono);color:var(--mu);gap:8px}
+.badge{color:var(--ac);border:1px solid var(--ac);padding:2px 10px;border-radius:999px;white-space:nowrap}
+.pj ul,.hl{margin:0;padding-left:18px;color:var(--mu);font-size:14.5px}
+.feat{grid-column:1/-1;background:linear-gradient(135deg,var(--ac2),transparent 60%),var(--card)}
+.feat h3{font-size:clamp(24px,3vw,32px)}
+.feat .cols{display:grid;grid-template-columns:1.2fr 1fr;gap:28px}
+.note{font-size:13px;font-style:italic}
+.num{font:500 13px var(--mono);color:var(--ac)}
+.sub{padding:56px 0;border-top:1px solid var(--bd)}
+.flow{display:flex;flex-direction:column;align-items:center;gap:0;max-width:420px;margin:0 auto}
+.flow div{width:100%;text-align:center;padding:12px;border:1px solid var(--bd);border-radius:10px;background:var(--card);font:500 13px var(--mono)}
+.flow div.k{border-color:var(--ac);color:var(--ac)}
+.flow s{text-decoration:none;color:var(--ac);line-height:1.6}
+.x{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.x button{min-height:44px;padding:0 20px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--mu);font:500 14px var(--mono);cursor:pointer}
+.x button[aria-selected=true]{background:var(--ac);border-color:var(--ac);color:#fff}
+.gr{width:100%;height:auto;display:block}
+.gr rect{fill:var(--card);stroke:var(--bd);transition:stroke .2s}.gr g:hover rect{stroke:var(--ac)}
+.gr text{fill:var(--tx);font:500 12px var(--mono)}.gr line{stroke:var(--ac);stroke-opacity:.5}
+dl{margin:0}dt{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ac);margin-top:14px}dt:first-child{margin-top:0}dd{margin:4px 0 0;color:var(--mu);font-size:15px}
+.tl{border-left:1px solid var(--bd);margin-left:6px;padding-left:28px}
+.tl .it{position:relative;padding-bottom:36px}.tl .it:before{content:"";position:absolute;left:-34px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 4px var(--ac2)}
+form{display:grid;gap:14px}
+label{font-size:13px;color:var(--mu);display:grid;gap:6px}
+input,textarea{font:inherit;color:var(--tx);background:var(--bg2);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;width:100%}
+input:focus,textarea:focus{outline:2px solid var(--ac);border-color:transparent}
+.ct a{display:block;text-decoration:none;color:var(--tx);padding:10px 0;border-bottom:1px solid var(--bd);overflow-wrap:anywhere}.ct small{display:block;font:500 11px var(--mono);color:var(--mu);letter-spacing:.1em;text-transform:uppercase}
+footer{border-top:1px solid var(--bd);padding:28px 0;font-size:13px;color:var(--mu)}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*{transition:none!important}}
+@media(max-width:900px){.g4{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr}.feat .cols,.g2{grid-template-columns:1fr}}
+@media(max-width:820px){#mb{display:block}.links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:12px 24px 20px;background:var(--bg);border-bottom:1px solid var(--bd)}.links.o{display:flex}.links a{padding:12px 0;font-size:16px}.links .btn{margin-top:8px}header{position:sticky}}
+@media(max-width:520px){section{padding:68px 0}.hero{padding-top:72px}.w{padding:0 18px}.cta .btn{flex:1 1 100%}}
+</style></head><body>
+<header><div class="w"><nav aria-label="Primary"><a class="logo" href="#top">Arya U<i>.</i></a>
+<button id="mb" aria-label="Menu" aria-expanded="false" aria-controls="lk">☰</button>
+<div class="links" id="lk"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a><a class="btn" href="ARYA_U_RESUME.pdf" download="ARYA_U_RESUME.pdf" data-resume>Resume</a></div></nav></div></header>
+<main id="top">
+<div class="hero"><div class="w">
+<div class="tags"><span>Web Development</span><span>Software Development</span><span>Data &amp; AI</span></div>
+<h1>Building Interfaces. <em>Engineering Solutions.</em></h1>
+<p>I’m Arya U, a Computer Science postgraduate interested in web development, software engineering, data analytics and AI-driven systems. I enjoy turning ideas into practical, intuitive and technically meaningful applications.</p>
+<div class="cta"><a class="btn p" href="#projects">Explore My Work →</a><a class="btn" href="#contact">Let’s Connect</a></div>
+</div></div>
+
+<section id="about"><div class="w">
+<div class="g g2" style="gap:48px;align-items:start"><div class="rv"><p class="eye">About</p><h2>Clean interfaces, meaningful backend logic.</h2>
+<p>I am currently pursuing an M.Tech in Computer Science Engineering under APJ Abdul Kalam Technological University. I completed my B.Tech in Computer Science Engineering in 2025 with a CGPA of 9.15, along with a Minor in Mechatronics and Honours in Cyber Security.</p>
+<p>My technical interests span web development, software engineering, data analytics and artificial intelligence. I enjoy building practical projects that combine clean interfaces with meaningful backend logic and intelligent functionality.</p>
+<p>I am currently looking for opportunities where I can strengthen my web development skills, contribute to real-world products and learn from experienced teams.</p></div>
+<div class="g g2 rv"><div class="c stat"><b>9.15</b><span>B.Tech CGPA</span></div><div class="c stat"><b>M.Tech</b><span>2025 – Present</span></div><div class="c stat"><b>Cyber Security</b><span>Honours</span></div><div class="c stat"><b>Mechatronics</b><span>Minor</span></div></div></div>
+</div></section>
+
+<section id="skills" style="background:var(--bg2)"><div class="w"><p class="eye">Technical Skills</p><h2>The toolkit.</h2>
+<div class="g g3 rv" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+<div class="c sk"><h3>Web Development</h3><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Django</span><span class="chip">Flask</span></div></div>
+<div class="c sk"><h3>Programming</h3><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">C</span><span class="chip">SQL</span></div></div>
+<div class="c sk"><h3>Data &amp; Analytics</h3><div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Excel</span><span class="chip">Power BI</span></div></div>
+<div class="c sk"><h3>AI / Machine Learning</h3><div class="chips"><span class="chip">PyTorch</span><span class="chip">CNN</span><span class="chip">MobileNetV2</span><span class="chip">Transfer Learning</span></div></div>
+<div class="c sk"><h3>Tools / Concepts</h3><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">REST APIs</span><span class="chip">Database fundamentals</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="w"><p class="eye">Featured Projects</p><h2>Selected work.</h2>
+<div class="g g2">
+<article class="c pj feat rv"><div class="top"><span>01 · AI Systems / Digital Twin / Multi-Agent Systems / Research</span><span class="badge">Research Project</span></div>
+<h3>AURORA</h3><p style="margin:0;color:var(--tx)">Autonomous University Reasoning, Optimization &amp; Research Architecture</p>
+<p style="margin:0">A research-oriented computational digital twin of a university, designed to predict, simulate, explain and optimize institutional decisions over multiple years. It models the university as a complex adaptive system using interacting agents and a temporal knowledge graph.</p>
+<div class="chips"><span class="chip">Multi-Agent Systems</span><span class="chip">Digital Twins</span><span class="chip">Temporal Knowledge Graphs</span><span class="chip">Explainable AI</span><span class="chip">NetworkX</span><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">SQLite/PostgreSQL</span></div></article>
+
+<article class="c pj rv"><div class="top"><span>02 · AI / Web</span></div><h3>AI Video Detection System</h3>
+<p>Developed an AI-based video classification system using MobileNetV2 transfer learning. The system performs frame extraction, preprocessing and majority voting to classify videos as Real or Fake.</p>
+<div class="chips"><span class="chip">PyTorch</span><span class="chip">CNN</span><span class="chip">MobileNetV2</span><span class="chip">Flask</span></div>
+<ul><li><b style="color:var(--tx)">Flask web interface</b> for uploading videos and viewing results</li><li>Frame extraction &amp; image preprocessing</li><li>Transfer learning with MobileNetV2</li><li>Majority voting across frames</li><li>CPU-based training and evaluation</li></ul></article>
+
+<article class="c pj rv"><div class="top"><span>03 · Data Analytics</span></div><h3>Customer Shopping Behavior Analysis</h3>
+<p>Conducted an end-to-end analysis of 3,900+ retail records using Python, SQL and Power BI to identify sales drivers and customer behavior patterns.</p>
+<div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Power BI</span></div>
+<ul><li>Data cleaning</li><li>SQL analysis</li><li>Customer segmentation / behavior analysis</li><li>Sales pattern analysis</li><li>Power BI visualization &amp; data-driven insights</li></ul></article>
+<article class="c pj rv"><div class="top"><span>04 · Web Application</span></div><h3>QR Code–Based Shopping System</h3><p style="margin:0">A web application that lets users scan QR codes to add products to their cart and proceed to checkout, improving shopping efficiency and reducing dependence on manual billing.</p><div class="chips"><span class="chip">Python</span><span class="chip">Django</span></div></article>
+<article class="c pj rv"><div class="top"><span>05 · Web Application</span></div><h3>To-Do List Mobile Application</h3><p style="margin:0">A responsive task-management app with add/remove functionality and a clean UI for daily productivity.</p><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div></article>
+<article class="c pj rv"><div class="top"><span>06 · Desktop Application</span></div><h3>Motivational Quote Generator</h3><p style="margin:0">A lightweight desktop app using a Django backend and PyWebView to display random motivational quotes with a button-based refresh.</p><div class="chips"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">PyWebView</span></div></article>
+<article class="c pj rv"><div class="top"><span>07 · Hardware Mini-Project</span></div><h3>Low-Cost Solar Tracker System</h3><p style="margin:0">Tracks sunlight direction using LDR sensors and rotates a solar panel with a servo motor to improve energy capture.</p><div class="chips"><span class="chip">LDR</span><span class="chip">Servo Motor</span></div></article>
+</div></div></section>
+
+<section><div class="w"><p class="eye">Why Web Development?</p><h2>Interfaces people can actually use.</h2>
+<p style="max-width:68ch">I enjoy the process of turning technical ideas into interfaces that people can actually use. My projects have given me exposure to frontend interfaces, backend APIs, databases, data visualization and AI-enabled applications. I’m particularly interested in improving my ability to build responsive, maintainable and user-focused web applications.</p>
+<div class="g g3 rv" style="margin-top:28px"><div class="c"><h3>BUILD</h3><p style="margin:0">Turning ideas into working applications.</p></div><div class="c"><h3>DESIGN</h3><p style="margin:0">Creating clean, intuitive user experiences.</p></div><div class="c"><h3>CONNECT</h3><p style="margin:0">Building interfaces that communicate with reliable backend systems.</p></div></div>
+<div class="g g4 rv" style="margin-top:48px"><div class="c"><h3>LEARN</h3><p style="margin:0;font-size:14px">Explore technologies beyond the classroom.</p></div><div class="c"><h3>BUILD</h3><p style="margin:0;font-size:14px">Apply concepts through practical projects.</p></div><div class="c"><h3>SOLVE</h3><p style="margin:0;font-size:14px">Break complex problems into manageable systems.</p></div><div class="c"><h3>IMPROVE</h3><p style="margin:0;font-size:14px">Use feedback to continuously refine solutions.</p></div></div>
+</div></section>
+
+<section id="education" style="background:var(--bg2)"><div class="w"><p class="eye">Education</p><h2>Academic path.</h2>
+<div class="tl rv"><div class="it"><p class="num" style="margin:0">2025 – Present</p><h3>M.Tech in Computer Science Engineering</h3><p>APJ Abdul Kalam Technological University</p></div>
+<div class="it"><p class="num" style="margin:0">2025</p><h3>B.Tech in Computer Science Engineering</h3><p style="margin-bottom:8px">APJ Abdul Kalam Technological University</p><div class="chips"><span class="chip">CGPA 9.15</span><span class="chip">Minor: Mechatronics</span><span class="chip">Honours: Cyber Security</span></div></div></div>
+</div></section>
+
+<section id="contact"><div class="w"><div class="g g2" style="gap:48px;align-items:start">
+<div class="rv"><p class="eye">Contact</p><h2>Let’s Build Something.</h2>
+<p>I’m open to web development internships, collaborative projects and opportunities to learn through real-world engineering.</p>
+<div class="ct"><a href="mailto:aryaunnikrishnan223@gmail.com"><small>Email</small>aryaunnikrishnan223@gmail.com</a><a href="https://www.linkedin.com/in/arya-u/" target="_blank" rel="noopener"><small>LinkedIn</small>linkedin.com/in/arya-u</a><a href="https://github.com/AryaUnniSodha" target="_blank" rel="noopener"><small>GitHub</small>github.com/AryaUnniSodha</a></div></div>
+<form class="c rv" id="f"><label>Name<input name="n" required autocomplete="name"></label><label>Email<input name="e" type="email" required autocomplete="email"></label><label>Message<textarea name="m" rows="5" required></textarea></label><button class="btn p" type="submit">Send Message</button><p id="fs" role="status" style="margin:0;font-size:13px"></p></form>
+</div></div></section>
+</main>
+<footer><div class="w">© 2026 Arya U · Designed &amp; built with HTML, CSS and JavaScript.</div></footer>
+<script type="text/plain" id="rp">JVBERi0xLjMKJeLjz9MKMSAwIG9iago8PAovUGFnZU1vZGUgL1VzZU5vbmUKL1BhZ2VzIDIgMCBSCi9UeXBlIC9DYXRhbG9nCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9Db3VudCAyCi9LaWRzIFsgMyAwIFIgMTIgMCBSIF0KL1R5cGUgL1BhZ2VzCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9Bbm5vdHMgWyA0IDAgUiA1IDAgUiA2IDAgUiBdCi9Db250ZW50cyA3IDAgUgovTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXQovUGFyZW50IDIgMCBSCi9SZXNvdXJjZXMgPDwKL0ZvbnQgOCAwIFIKL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4KL1JvdGF0ZSAwCi9UcmFucyA8PAo+PgovVHlwZSAvUGFnZQo+PgplbmRvYmoKNCAwIG9iago8PAovQSA8PAovUyAvVVJJCi9UeXBlIC9BY3Rpb24KL1VSSSAobWFpbHRvXDA3MmFyeWF1bm5pa3Jpc2huYW4yMjNcMTAwZ21haWxcMDU2Y29tKQo+PgovQm9yZGVyIFsgMCAwIDAgXQovUmVjdCBbIDE1MC4xMDI4IDc2My4wMzk0IDI4Ni4yNDI4IDc3NS4wMzk0IF0KL1N1YnR5cGUgL0xpbmsKL1R5cGUgL0Fubm90Cj4+CmVuZG9iago1IDAgb2JqCjw8Ci9BIDw8Ci9TIC9VUkkKL1R5cGUgL0FjdGlvbgovVVJJIChodHRwc1wwNzJcMDU3XDA1N3d3d1wwNTZsaW5rZWRpblwwNTZjb21cMDU3aW5cMDU3YXJ5YVwwNTV1XDA1NykKPj4KL0JvcmRlciBbIDAgMCAwIF0KL1JlY3QgWyAyOTMuMjQyOCA3NjMuMDM5NCAzODQuNjIyOCA3NzUuMDM5NCBdCi9TdWJ0eXBlIC9MaW5rCi9UeXBlIC9Bbm5vdAo+PgplbmRvYmoKNiAwIG9iago8PAovQSA8PAovUyAvVVJJCi9UeXBlIC9BY3Rpb24KL1VSSSAoaHR0cHNcMDcyXDA1N1wwNTdnaXRodWJcMDU2Y29tXDA1N0FyeWFVbm5pU29kaGEpCj4+Ci9Cb3JkZXIgWyAwIDAgMCBdCi9SZWN0IFsgMzkxLjYyMjggNzYzLjAzOTQgNTA0LjY3MjggNzc1LjAzOTQgXQovU3VidHlwZSAvTGluawovVHlwZSAvQW5ub3QKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdCi9MZW5ndGggMjc4Nwo+PgpzdHJlYW0KR2IhI10+QkFmNiZxODAxa2JrUUwzQydnbkZlOS1lLFtsRjwjV09XSjxJIzFiISJINnBPbFdgX20+aklgKTJQVUgoTUFyPENvLCJuPGlhIUxJLC1CJDpyYmZIXWdgPURCYT8qTCpkQmwlRjc6KlUjKSIzPEtMXDdlXV47N2FZOC9yNjVsZzpxWlc3VUolOiJbVGxnRCZeKjIqTFIwLDBhIy4qcjQ2RD9dbDNTPCVeJm9xNy9uX1xlRFxDLiRxUUIqYzc+cGIvUjBeNT8uUGk4N0pmXCw9LDpPKjIhIVkhS1BaMmBjcSEwI25AZGM2cWNVR1lYSG5cbz9IbEZJTzphMmhGTChyVyZrOTBnVidbK2tUQ0FdYkVtMElkaXN1NjVabXAxPEZJZmhvaEVpZD9rNWVsJUZtLF09KzEsbCkiVj9iQT88WVojRlZZcC9LJSlaOkZqcWdEPF1ITk5YNVVZO0xOOXBIOD8rSElCWXBUJipkWm9kN0hBRygiKG9HLS8lLFZVZz5WaFhiSG5ock5jZlwuOG0mXSF0bkRlXHMwXVZVJWhMRmI8bGwncj9QL1ktVzh0PHAuOTRVWGlNcFleOWhtJSI0UD5SQHN0YiZZZ1BFMEciVT0tcmlxbDVhcz0lX1NAKCwlMFhFcU04LDQwYCYobTdiWGYqRS4lLG8vI2xaTEk3OT89OTw2PVNjMS06c0ZlKSsmZkI7TzNmOSdPS1UtM0AjTGcvTClHVl04VTZSOjNWVjgwRFdoMmRnPSsnSihGSm9TUlhrLyRMLWlKPi5ddWYyRCxVOm9yMDdVKHQuYSxaLFBOK1ZwPEloak9pcCZMYjhoVF1PdDFNNlw0SkIoc18yKG0ibmZhI3VGLzh0X2lFVV11OVkvNl9SPC9mK1BrU0gzXE4hcUFfayRYS2I5JmFYXk5qaltVXEldSGIoZVFwTUFmXGwsKWhbPjNIWSJOVFxsSUxRSk1tP3FrT1M2OT5xXzYzR1g7N05AIVVdU2lPU3NgKGp1OzhFcEtLPVA8K0IkcF5ra1k7R3FLI2YlS0c7WydELG1WYG8vYDQsUVhzRE9CYURDXVxObycoUFZDaC5BO009XVcwJEQoLTQkX1RhTzxLYmlQbjU8PS0nUFVYcExbSWUwNEFySlBbYShbMEdfLUBXTDc2N1JvVSQ1WDdIKCtkby9xa1h1XjtxZzNjYlVjOidBWkN1Q1MiOThCLDRLVTNLUzA5Y29zITxtXz1bPjwxbidgYFk/PlhqPVQxLTMpciIuJ2VBZC1oaFI3Z2NyYThcUlUzQnFVbUlXaFkkUy9waGRUdWciTG9RNkxAak1xSyxSSHJkMDI+J2NjYzdgclImKjNebFc8IVhcTC8sWmhNYihaVlYrIT1SVyE6S0xkQSY1Sm9obDpOPWFIWVJSPE41TVBbME9CQVxQSmE5bkdZVS9yKHMlJlAzP2BePSM1RCdNIktnLCExRHF1Zi9LcHI2XENeI1ZITj42UDVHNz9na10vRCQ3bVZvJy5vSykvb0tvbklEZT0hWVhkOG11NydtXXVwNDhlaXIqVSJAbTJcPDhZZmtxdD4qcjxlNDgjWChcUl1DZEs+SEw4Vy4lQWksXXFYOSNFQ3VXV0wyQ2tKTV1sPW5eVnE8YD9lOSwrb0pJI0NGZEAxMmFXISYjOlxxWkBOPjtPTDAxV0orYmVoUihuWilmKVxcUTVcPUNCO3NzUihxJj0kRTJrKXI4WW5jOlA0KnVLKDBlTkhIbD1AYGMmNCYiX2hvQiNDPGtDMDldYCEkNUxfTSk4ZmtmLnJWcjskQDZvRFEjWF5BXW5QanRWXTBKZEskRWdHZDA+RjouPzlTNGgjMUlaR2dJbjxxQyZHWGskLWoxLj9uLjk4RlU4XkIybDNrXmkibVdEPjRDNkg8JloqXzAuZiNDUD8kJytRZHAsaCxzI2FOW3FDP19caF9xNWRNYHJmR2dMcjtNQVVqQUAtLi1FQk4vPTEkSEoqVEZFXjE6LCVacFtTbTA6Zyw8KWpaUlRycWVbXFxOKSNUSWZLYVVwSlh1VklYJ0xyNGYvcDMjWl5aIyhZTTIhMSRBTUtIJktkJkdyam1MLCpHWUY0JVxzO2YyY3RzZktrO19ZSGUyZ2wjRGNpUEJOTSNZW15eMFZiQ2xbblo2XmFFbmxeJVxLS0B0Ni9oZj0yVUwuVE4uckxnQVRbUUxvTkZsTWRjYzhsZFozMFptMz5FU19kUV1VW2FwN1FBY1pTOmZXcDFlRGFYakklI0FlVzNuJig+O185L28mdCJPR2NxOWlWKE1IMlZCWEheWlssRTImQW43VFQkZ2YlO2M1WyMxOmNTMGk4VFxoR1JjVTBUdGwkRVdYPWQ9UCpNSGMjQjotXXAuRj42dDJ0RCZFPnVwVFNVJGRtYlstOU5mTHBbQ2AkWS0rUlkqIy1LRSg5WTFdYVpzXk4mWCZLVCojTk9YUydRRm1rUmhkMyVsbkRsMSJkTnU9cmJqJm42USFrUTg/LW8pT0gwQkcmKylYOmVCKCooT2QvM0c6KjE8MzxmWDNPbzlsLkxCMDBWI2AqZHRNMS4zJSptaWcsSyQtcS1XWzpUJFxaLU00MiJbOjJJam10ZVYydTkocCFnVT5aW2ctTSxtVzliO0UlXWJuRHE9XkkqPz88ZFUobmxaSyk6LDtZcyJxaV87TiVzLSJSRS1VNVxdL2olOiJtMyhTc24xZzgjRjM2InRebFBUOT5NS0ZtLkQzJDgsRERgM2cvQWdeLTllakI7QmEtJlEmPFMtJiwrM0xGZ2EqQyxMa1heTm8yJks2LGBKKktnQm4icUpzR2JhVDo/XWpxN1lIRixmUkJVLkUvYTcqYmNQUm80a1QiXmhrMzFjWURNODcqdS5uIkVSOF1dXUhFO2M9SjIjOkJAcGxRdCRjS1ItOiNGLz9qSzZWaTVDMGhFK3VLNGFiUTBZYVw8KSQ1Wlo8NzFBSTZYbDdGRGU5XkdhVidZOUtARkRHYllMVThYUUxBN1NOYDwnWC5wYD90Jm1DX11bQkdyMTNQJlw+azNTTl1GQFlWPEhfKkZYSSYiJE9OMzcjUGBfOWwoXSloOEtAW1VVdUknRFNULiE8I2glcjUiVDQwa0ppYF5tQE9bTTU5Qm4xOCIuV2ImMig1Tj9tdW1yN25pWSxjdS0pKiFuTy1wK3NhMzsjUEpVVSg4bSc8OklIanNXOipOLjhQN1pRN1dzUnMnXmwtQG1JP1okVyFrWlJyNHErKmxyPkNcdURCIytaJ2xIXyUtUXMuOSorRUooLFRiQUNybWRiK0I3NSUvR2M4cjkzZlk5KWtCbjx1LjRATFpsTksmbmZ0MktLV1FqUjBDVjpSYzpfZV0zPThuMl9PX1ksQFcoRUpeNSlTUWJYJjdWYVtIJGUjI0RpXVlVSVdiJ1BUWWNZUXVDa29sTTAyJVZuIjhlJyMpZjFnMFVHQS43RzcuTzBsQF0oRCZlPDZDcShuXVc3aVlqSz8kUTU8PzlgTnAua0dCNm09K2dXZV1SUypbW1hLa19GOCtNZmBVV2VKUGMhJ1onLWZYZzFNWGREXCghMl9UcUlRTmxJWjgtWTBKbSxwKWU7NTZmPmktXE4iJCpZb3VQRDxJIUZdIVlROEopIUFrVDgyQjUkOXVAbm9AIj5tU2MxaFZiWEJhUDRiLyMmIldbSVdRMGIoX34+CmVuZHN0cmVhbQplbmRvYmoKOCAwIG9iago8PAovRjEgOSAwIFIKL0YyIDEwIDAgUgovRjMgMTEgMCBSCj4+CmVuZG9iago5IDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCi9OYW1lIC9GMQovU3VidHlwZSAvVHlwZTEKL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjEwIDAgb2JqCjw8Ci9CYXNlRm9udCAvVGltZXMtQm9sZAovRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZwovTmFtZSAvRjIKL1N1YnR5cGUgL1R5cGUxCi9UeXBlIC9Gb250Cj4+CmVuZG9iagoxMSAwIG9iago8PAovQmFzZUZvbnQgL1RpbWVzLVJvbWFuCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCi9OYW1lIC9GMwovU3VidHlwZSAvVHlwZTEKL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjEyIDAgb2JqCjw8Ci9Db250ZW50cyAxMyAwIFIKL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0KL1BhcmVudCAyIDAgUgovUmVzb3VyY2VzIDw8Ci9Gb250IDggMCBSCi9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+Ci9Sb3RhdGUgMAovVHJhbnMgPDwKPj4KL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjEzIDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29kZSAvRmxhdGVEZWNvZGUgXQovTGVuZ3RoIDYwMgo+PgpzdHJlYW0KR2F1YFBfL2UhWSZBQDZXaEQkXjpaIyVIdVwtOCVJUjU+QVRPMWhLdEBba04nT2xfby40WSleXUwrLEpiQTlQdSFsV3EyUDpbOWwqOEIvWklCUyNtXWhIaHRBI2ZSOSkjbmRxZlhHWS0vJC84UCw9OmlmQTMoQShSIyU5VmlrVCRHYGkxVj5cJ1swQ1w1RVdlcC5Jb0lXQlhZZU1OYi1sbydPTyNxaVUmPyY0MlFkW191IyoiSF4qY3NqNUwpNHEnX05tPixgUDFVKnJIPVg/YHE0YF5zJDtxcmUqXz5yZCdXP01kMyFhQm07V2BUUFhSZmJVWF00J1pjJjJkMFpCXF5jXEI6MTBUSEI0XF9yRlgrRTUtXnFxZUtUa2MoS1FIT14uMG5mTVVZdVgjamo2KmROJEpbKT9scFtibHNKYGByaF42WFlzIWVcR0deO1sxLCY0YWMhbFpbRipXMVRbSURRbT8pJlA8ZU1UbmY2b0NWMm07RzBgb11XWVFrMHVJZWs3Zj8iclk3IllPM21tbFo8RiJSRTU+MyMyP0tHVjQoREt0S2BwIVJLW0c0czQyOGJbRkdJNjFfN3NuOlNdQnBAb1lJcCVUUDRTTG4mX1YsUDJ0PDFERUBEI05EX25oOi0yYXVlXmIuLyVHbEdzWm4vIzckO2g7YSNFNjM+IkNNZyVQcE1ZbktPOURxJlxkb25OOTYuNEdBZFpqcTdUXj08JEgkZ1EkPC9gPHVZX043ZVdVYXFrNmxgY1dKPD5SalZdRyQvVGY+SXQuRWhKaGQnJWInQi5vfj4KZW5kc3RyZWFtCmVuZG9iagoxNCAwIG9iago8PAovQXV0aG9yIChBcnlhIFUpCi9DcmVhdGlvbkRhdGUgKERcMDcyMjAyNjEwMDYwNjI5MjlcMDUzMDBcMDQ3MDBcMDQ3KQovQ3JlYXRvciAoKQovS2V5d29yZHMgKCkKL01vZERhdGUgKERcMDcyMjAyNjEwMDYwNjI5MjlcMDUzMDBcMDQ3MDBcMDQ3KQovUHJvZHVjZXIgKCkKL1N1YmplY3QgKFwwNTB1bnNwZWNpZmllZFwwNTEpCi9UaXRsZSAoQXJ5YSBVIFwwNTUgUmVzdW1lKQovVHJhcHBlZCAvRmFsc2UKPj4KZW5kb2JqCnhyZWYKMCAxNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMTUgMDAwMDAgbiAKMDAwMDAwMDA4MyAwMDAwMCBuIAowMDAwMDAwMTQ5IDAwMDAwIG4gCjAwMDAwMDAzNzggMDAwMDAgbiAKMDAwMDAwMDU3NSAwMDAwMCBuIAowMDAwMDAwNzg5IDAwMDAwIG4gCjAwMDAwMDA5ODggMDAwMDAgbiAKMDAwMDAwMzg2NyAwMDAwMCBuIAowMDAwMDAzOTIwIDAwMDAwIG4gCjAwMDAwMDQwMjcgMDAwMDAgbiAKMDAwMDAwNDEzNiAwMDAwMCBuIAowMDAwMDA0MjQ2IDAwMDAwIG4gCjAwMDAwMDQ0NDcgMDAwMDAgbiAKMDAwMDAwNTE0MSAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9TaXplIDE1Ci9Sb290IDEgMCBSCi9JbmZvIDE0IDAgUgovSUQgWyA8YzQ1ZWE5YmY5ZTg2YTM1MmIzOGQxMzljZmI1Zjc0YTk+IDxjNDVlYTliZjllODZhMzUyYjM4ZDEzOWNmYjVmNzRhOT4gXQo+PgpzdGFydHhyZWYKNTM5MgolJUVPRgo=</script>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const mb=$('#mb'),lk=$('#lk');
+mb.onclick=()=>{const o=lk.classList.toggle('o');mb.setAttribute('aria-expanded',o);mb.textContent=o?'✕':'☰'};
+$$('.links a').forEach(a=>a.addEventListener('click',()=>{lk.classList.remove('o');mb.textContent='☰';mb.setAttribute('aria-expanded',false)}));
+$('[data-resume]').addEventListener('click',async e=>{try{const d=window.claude&&await window.claude.use('downloads');if(d){e.preventDefault();const r=atob($('#rp').textContent.trim()),u=new Uint8Array(r.length);for(let i=0;i<r.length;i++)u[i]=r.charCodeAt(i);await d.save({filename:'ARYA_U_RESUME.pdf',data:new Blob([u],{type:'application/pdf'})})}}catch(x){}});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(e=>io.observe(e));
+$('#f').addEventListener('submit',e=>{e.preventDefault();const f=e.target;
+location.href='mailto:aryaunnikrishnan223@gmail.com?subject='+encodeURIComponent('Portfolio message from '+f.n.value)+'&body='+encodeURIComponent(f.m.value+'\n\n— '+f.n.value+' ('+f.e.value+')');
+$('#fs').textContent='Opening your email app to send this message…'});
+</script></body></html>
